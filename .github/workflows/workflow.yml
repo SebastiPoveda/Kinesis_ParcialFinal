@@ -35,8 +35,10 @@ jobs:
       - name: Flake8 test
         run: |
           pip install flake8
-          flake8 scraping.py
-          flake8 --max-line-length=120 beatifulsoup.py 
+          flake8 --max-line-length=120 consumer_lower.py
+          flake8 --max-line-length=120 consumer_upper.py
+          flake8 stock1.py
+          flake8 stock2.py
 
       - name: Pytest
         run: |
